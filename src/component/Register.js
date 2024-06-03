@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./Register.css"
 import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth, provider } from './firebase';
 import { useNavigate } from 'react-router-dom';
@@ -14,11 +15,11 @@ const Register = () => {
             await createUserWithEmailAndPassword(auth, email , password)
             const user = auth.currentUser;
             console.log(user);
-            console.log("created ");
+            alert("signup successfully")
             navigate("/login")
         }
         catch(error){
-            console.log(error);
+            alert(error,"occurs");
         }
     }
 
@@ -35,21 +36,20 @@ const Register = () => {
     }
   return (
     <>
+    <div className='signwrapper'>
     <form onSubmit={HandleRegister}>
-       
-        <label>Email</label>
-        <input type='email' value={email} onChange={(e) =>setEmail(e.target.value)} placeholder='email'></input>
+
+            <h1 className='signup'>Sign up</h1>
+        <input type='email' className='logininput' value={email} onChange={(e) =>setEmail(e.target.value)} placeholder='email'></input>
         <br/>
-        <label >Password</label>
-        <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password'></input>
+        <input type='password' className='logininput' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password'></input>
 
             <br/>
-
             <button>Register </button>
 
-            <button onClick={handlegooglesign}> Gooogle Sign up</button>
-  
+            <button  className=" buttongoogle"onClick={handlegooglesign}> Gooogle Sign up</button>
     </form>
+    </div>
     </>
   )
 

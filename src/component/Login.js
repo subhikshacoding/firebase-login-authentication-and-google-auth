@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Login.css'
 import { auth } from './firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router';
@@ -24,19 +25,20 @@ const Login = () => {
 
   return (
     <>
+            <div className='loginwrapper'>
+
     <form onSubmit={HandleLogin}>
-      
-        <label>Email</label>
-        <input type='email' value={email} onChange={(e) =>setEmail(e.target.value)} placeholder='email'></input>
+        <h1 className='login'> Login</h1>
+        <input  className="logininput "type='email' value={email} onChange={(e) =>setEmail(e.target.value)} placeholder='email'></input>
         <br/>
-        <label >Password</label>
-        <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password'></input>
+        <input  className=" logininput "type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password'></input>
 
             <br/>
 
-            <button>Login </button>
-  
+            <button >Login </button>
     </form>
+    </div>
+
     </>
   )
 

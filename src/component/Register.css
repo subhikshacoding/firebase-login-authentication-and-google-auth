@@ -1,0 +1,44 @@
+.signwrapper{
+    height: 350px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+input{
+    height: 40px;
+    padding-right: 20px;
+    width: 250px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.signup{
+    text-align: center;
+    margin-bottom: 5px;
+}
+button{
+    height: 30px;
+    background-color: rgb(244, 117, 94);
+    margin-top: 20px;
+    width: 150px;
+
+    margin-left: 60px;
+    border-radius: 10px;
+    
+}
+button:focus{
+    outline: none;
+}
+.buttongoogle{
+    width: 200px;
+    background-color: rgb(142, 239, 159);
+    margin-left: 40px;
+}

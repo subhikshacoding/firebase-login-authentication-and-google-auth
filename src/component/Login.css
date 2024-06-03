@@ -1,0 +1,30 @@
+.loginwrapper{
+    height: 250px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+input{
+    height: 30px;
+    padding-right: 20px;
+    width: 250px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.login{
+    text-align: center;
+}
+button{
+    width: 150px;
+    margin-left: 50px;
+    
+}
