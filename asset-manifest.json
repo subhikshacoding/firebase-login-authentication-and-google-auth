@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/firebase-login-authentication-and-google-auth/static/css/main.ab235a54.css",
+    "main.js": "/firebase-login-authentication-and-google-auth/static/js/main.7681f9f6.js",
+    "index.html": "/firebase-login-authentication-and-google-auth/index.html",
+    "main.ab235a54.css.map": "/firebase-login-authentication-and-google-auth/static/css/main.ab235a54.css.map",
+    "main.7681f9f6.js.map": "/firebase-login-authentication-and-google-auth/static/js/main.7681f9f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab235a54.css",
+    "static/js/main.7681f9f6.js"
+  ]
+}
